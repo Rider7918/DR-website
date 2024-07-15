@@ -26,9 +26,9 @@ function Contact() {
       <div className="contact-content">
         <div className="contact-details">
           <div className="contact-main">
-            <p className="ba-checks ba-check-first">
+            <p className="ba-checks ba-check-first" style={{textDecoration:"none"}}>
               <FontAwesomeIcon icon={faPhone} style={{ color: "#1E8FFD" }} />{" "}
-                1234567890
+                9511725382
             </p>
             <p className="ba-checks">
               <FontAwesomeIcon icon={faMailBulk} style={{ color: "#1E8FFD" }} />{" "}

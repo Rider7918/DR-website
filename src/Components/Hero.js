@@ -62,7 +62,7 @@ function Hero() {
           <h1 className="text-title">{typedText}</h1>
           
           
-          <p className="text-headline">❤️ Your Mental Health Is Our Priority</p>
+          <p className="text-headline"> 🧠Your Mental Health Is Our Priority </p>
           <p className="text-descritpion">
             We are dedicated to providing compassionate, comprehensive psychiatric care to help you achieve optimal mental health and well-being. Located in Margoa Goa, our clinic offers a safe, welcoming environment where you can receive personalized treatment tailored to your unique needs.
           </p>
