@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import InformationCard from "./InformationCard";
-import { faHeartPulse, faTruckMedical, faTooth } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faDesktop, faUserDoctor } from "@fortawesome/free-solid-svg-icons";
 import "../Styles/Info.css";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function Info() {
+  useEffect(()=>{
+    AOS.init({duration:2500})
+  },[])
   return (
     <div className="info-section" id="services">
       <div className="info-title-content">
@@ -19,34 +24,34 @@ function Info() {
         </p>
       </div>
 
-      <div className="info-cards-content">
+      <div className="info-cards-content " data-aos='fade-right'>
         <InformationCard
-          title="Emergency Care"
+          title="Online Consultation"
           description="Our Emergency Care service is designed to be your reliable support
             in critical situations. Whether it's a sudden illness, injury, or
             any medical concern that requires immediate attention, our team of
             dedicated healthcare professionals is available 24/7 to provide
             prompt and efficient care."
-          icon={faTruckMedical}
+          icon={faDesktop}
         />
 
         <InformationCard
-          title="Heart Disease"
+          title="OPD"
           description="Our team of experienced cardiologists and medical experts use
             state-of-the-art technology to assess your cardiovascular health and
             design personalized treatment plans. From comprehensive screenings
             to advanced interventions, we are committed to helping you maintain
             a healthy heart and lead a fulfilling life."
-          icon={faHeartPulse}
+          icon={faUserDoctor}
         />
 
         <InformationCard
-          title="Dental Care"
+          title="Home Visit"
           description="Smile with confidence as our Dental Care services cater to all your
             oral health needs. Our skilled dentists provide a wide range of
             treatments, from routine check-ups and cleanings to cosmetic
             procedures and restorative treatments."
-          icon={faTooth}
+          icon={faHome}
         />
       </div>
     </div>

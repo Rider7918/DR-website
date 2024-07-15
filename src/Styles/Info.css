@@ -1,7 +1,7 @@
 .info-section {
-    padding: 0 32px;
+    padding: 0px 32px;
     text-align: center;
-    background-color: white;
+    background: rgb(255, 255, 255);
 }
 .info-title-content {
     margin: 64px 0 128px 0;

@@ -1,15 +1,19 @@
+
+
 .hero-section {
+    height: 100vh;
     padding: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 24px;
-    background: linear-gradient(to right, #ECF2FF, #FBFCFF);
+    background: rgba(243, 239, 239, 0.699);
 }
 /* Text section */
 .text-section {
     width: 60%;
     padding: 0 32px;
+    margin-left: 180px;
+    
 }
 .text-headline {
     margin-bottom: 12px;
@@ -25,6 +29,7 @@
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
     font-weight: bold;
+    padding-bottom: 30px;
 }
 .text-descritpion {
     width: 475px;
@@ -63,6 +68,9 @@
 .text-stats-container {
     text-align: center;
 }
+
+
+
 .text-stats-container > p {
     color: rgb(77, 75, 75);
     font-family: 'Poppins', sans-serif;
@@ -78,13 +86,15 @@
 }
 /* Image section */
 .hero-image-section {
-    width: 40%;
+    width: 100%;
     max-width: 100%;
     text-align: center;
 }
 .hero-image1 {
-    width: 100%;
+    width: 500px;
     height: auto;
+    border-radius: 50%;
+
 }
 /* Scroll Btn */
 .scroll-up {
@@ -110,41 +120,67 @@
 }
 /* Responsive */
 @media screen and (max-width: 900px) {
+    .hero-section {
+      flex-direction: column-reverse;
+      gap: 50px;
+      align-items: center;
+    }
     .hero-image-section {
-        display: none;
+      justify-content: center;
+      align-items: center; /* Center align the items */
+    }
+    .hero-image1 {
+      width: 200px;
+      height: auto;
+      border-radius: 50%;
     }
     .text-section {
-        width: 100%;
-        padding: 0;
+      width: 100%;
+      padding: 0;
+      margin-left: 0px;
     }
-    .text-title, .text-descritpion {
-        width: 100%;
+    .text-title,
+    .text-descritpion {
+      width: 100%;
     }
-}
-@media screen and (max-width: 600px) {
+  }
+  
+  @media screen and (max-width: 600px) {
+    .text-section {
+      margin-left: 0px;
+    }
     .text-headline {
-        font-size: 20px;
+      font-size: 20px;
     }
     .text-title {
-        font-size: 28px;
+      font-size: 28px;
     }
     .text-descritpion {
-        font-size: 16px;
+      font-size: 16px;
     }
     .text-appointment-btn {
-        font-size: 16px;
+      font-size: 16px;
     }
     .text-stats {
-        gap: 18px;
+      gap: 18px;
     }
     .text-stats-container > p {
-        font-size: 16px;
+      font-size: 16px;
     }
     .text-stats-container p:first-child {
-        font-size: 22px;
+      font-size: 22px;
     }
     .scroll-up {
-        bottom: 32px;
-        right: 32px;
+      bottom: 32px;
+      right: 32px;
     }
-}
+    .hero-image-section {
+      text-align: center; /* Center align on smaller screens */
+    }
+    .hero-image1 {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+  }
+  

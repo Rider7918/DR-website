@@ -39,7 +39,7 @@ function AppointmentForm() {
       setFormErrors(errors);
       return;
     }
-
+    
     var templateParams = {
       from_name: patientName,
       number: patientNumber,
@@ -49,10 +49,10 @@ function AppointmentForm() {
 
     emailjs
       .send(
-        "service_xptl3dq",
-        "template_z5cf7zt",
+        "service_hh3lf02",
+        "template_e1yv30d",
         templateParams,
-        "6AngFYj5z2VK86Zds"
+        "eP-Q60iKSqk_JxZuE"
       )
       .then(
         (response) => {
@@ -77,11 +77,7 @@ function AppointmentForm() {
 
   return (
     <div className="appointment-form-section">
-      <h1 className="legal-siteTitle">
-        <Link to="/">
-          Health <span className="legal-siteSign">+</span>
-        </Link>
-      </h1>
+     
 
       <div className="form-container">
         <h2 className="form-title">
@@ -161,9 +157,6 @@ function AppointmentForm() {
         </form>
       </div>
 
-      <div className="legal-footer">
-        <p>©2024 Mana.Shakti. All rights reserved.</p>
-      </div>
 
       <ToastContainer
         position="top-right"

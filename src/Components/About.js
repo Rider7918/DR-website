@@ -1,5 +1,4 @@
 import React from "react";
-import Doctor from "../Assets/doctor-group.png";
 import SolutionStep from "./SolutionStep";
 import "../Styles/About.css";
 import drlogo from "../Assets/dr.png";
@@ -8,7 +7,7 @@ function About() {
   return (
     <div className="about-section" id="about">
       <div className="about-image-content">
-        <img src={drlogo} alt="Doctor Group" className="about-image1" />
+        <img src={drlogo} alt="Doctor Group" className="about-image1" data-aos='fade-right'  />
       </div>
 
       <div className="about-text-content">
