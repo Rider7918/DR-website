@@ -175,9 +175,12 @@
       right: 32px;
     }
     .hero-image-section {
-      text-align: center; /* Center align on smaller screens */
+      text-align: center;
+      width: 100%;
+       /* Center align on smaller screens */
     }
     .hero-image1 {
+      margin-top: 50%;
       width: 200px;
       height: 200px;
       border-radius: 50%;

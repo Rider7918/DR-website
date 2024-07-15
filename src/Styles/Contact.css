@@ -24,8 +24,7 @@
 
 .contact-header {
   text-align: center;
-  margin-bottom: 20px;
-}
+  }
 
 .contact-title {
   color: #000000;
@@ -35,13 +34,27 @@
 .contact-content {
   display: flex;
   justify-content: space-between;
+  margin-top: 30px;
 }
 
 .contact-details {
   flex: 1;
-  text-align: center;
-  margin-top: 100px;
-  margin-right: 20px; /* Adjust spacing between contact details and map */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-wrap: wrap;
+  
+
+  
+  ; /* Adjust spacing between contact details and map */
+}
+.ba-checks{
+text-wrap: wrap;
+}
+.contact-main{
+  text-wrap: wrap;
+  width: 500px;
 }
 
 .details {
@@ -61,6 +74,7 @@
 
 .contact-map {
   flex: 1;
+
 }
 
 .map-container {
@@ -83,11 +97,24 @@
   }
 
   .contact-details {
-    margin-right: 0;
-    margin-bottom: 20px;
+    font-size: 1rem;
   }
+  
 
   .map-container {
-    height: 300px; /* Adjust height for mobile view */
+    padding: 0;margin-left: 20px;
+    height: 400px;
   }
+  .contact-map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .contact-main{
+    width: 355px;
+    text-wrap: wrap;
+  }
+  
 }

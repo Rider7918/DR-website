@@ -1,43 +1,50 @@
 import React from "react";
 import "../Styles/Contact.css";
-import { FaInstagram } from "react-icons/fa";
+import { FaInstagram, FaPhone } from "react-icons/fa";
 import "../Styles/BookAppointment.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { AiFillInstagram } from "react-icons/ai";
+import {
+  faCircle,
+  faCircleCheck,
+  faHome,
+  faIcons,
+  faLocation,
+  faMailBulk,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
 
 function Contact() {
   return (
     <div className="contact-container" id="contact">
       <div className="contact-header">
-      <h3 className="info-title">
+        <h3 className="info-title">
           <span>Contact Us</span>
         </h3>
       </div>
 
       <div className="contact-content">
         <div className="contact-details">
-          
-          <p className="detail-item">
-            <span className="detail-label">Phone:</span> +1 123 456 789
-          </p>
-          <p className="detail-item">
-            <span className="detail-label">Email:</span>{" "}
-            <a href="mailto:contact@example.com">contact@example.com</a>
-          </p>
-          <p className="detail-item">
-            <span className="detail-label">Address:</span> 123 Street, City,
-            Country
-          </p>
-
-          <p className="detail-item">
-            <span className="detail-label">Instagram:</span>{" "}
-            <a
-              href="https://www.instagram.com/"
-              title="Instagram"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaInstagram /> @yourusername
-            </a>
-          </p>
+          <div className="contact-main">
+            <p className="ba-checks ba-check-first">
+              <FontAwesomeIcon icon={faPhone} style={{ color: "#1E8FFD" }} />{" "}
+                1234567890
+            </p>
+            <p className="ba-checks">
+              <FontAwesomeIcon icon={faMailBulk} style={{ color: "#1E8FFD" }} />{" "}
+              draprpitasirsikar@gmail.com
+            </p>
+            <p className="ba-checks">
+              <FontAwesomeIcon icon={faLocation} style={{ color: "#1E8FFD" }} />{" "}
+              Almeida's Clinic, Baboy Commerce, next to Krishna
+              Medical Stores, Malbhat, Madgaon, Goa 403601{" "}
+            </p>
+            <p className="ba-checks ba-check-last">
+             
+             <span> <AiFillInstagram color="#1E8FFD" style={{fontSize:"1.7rem"}}/></span> <span>  <a href="https://www.instagram.com/mana.shakti/?igsh=MWM1azhkYm5odHhmNQ%3D%3D" target="_blank" rel="noopener noreferrer" style={{textDecoration:"none"}}>mana.shakti
+              </a></span>
+            </p>
+          </div>
         </div>
 
         <div className="contact-map">

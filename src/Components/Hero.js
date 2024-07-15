@@ -8,6 +8,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 function Hero() {
+  const isMobile = window.innerWidth <= 768;
   const navigate = useNavigate();
   const [goUp, setGoUp] = useState(false);
   const [typedText, setTypedText] = useState(""); // State to hold typed text
@@ -75,8 +76,13 @@ function Hero() {
         </div>
 
         <div className="hero-image-section">
-          <img className="hero-image1" src={drlogo} alt="Doctor" data-aos='fade-left'/>
-        </div>
+      <img
+        className="hero-image1"
+        src={drlogo}
+        alt="Doctor"
+        {...(!isMobile && { 'data-aos': 'fade-left' })}
+      />
+    </div>
       </div>
 
       <div

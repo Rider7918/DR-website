@@ -16,10 +16,7 @@ function BookAppointment() {
 
   return (
     <div className="ba-section">
-      <div className="ba-image-content">
-        
-      </div>
-
+    
       <div className="ba-text-content">
         <h3 className="ba-title">
           <span>Why Choose Health</span>
