@@ -3,14 +3,15 @@ import "../Styles/Contact.css";
 import { FaInstagram, FaPhone } from "react-icons/fa";
 import "../Styles/BookAppointment.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSquareInstagram } from '@fortawesome/free-brands-svg-icons';
 import { AiFillInstagram } from "react-icons/ai";
 import {
   faCircle,
   faCircleCheck,
   faHome,
   faIcons,
-  faLocation,
-  faMailBulk,
+  faLocationDot,
+  faEnvelope,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -28,21 +29,21 @@ function Contact() {
           <div className="contact-main">
             <p className="ba-checks ba-check-first" style={{textDecoration:"none"}}>
               <FontAwesomeIcon icon={faPhone} style={{ color: "#1E8FFD" }} />{" "}
-                9511725382
+                +91-9511725382
             </p>
             <p className="ba-checks">
-              <FontAwesomeIcon icon={faMailBulk} style={{ color: "#1E8FFD" }} />{" "}
+              <FontAwesomeIcon icon={faEnvelope} style={{ color: "#1E8FFD" }} />{" "}
               draprpitasirsikar@gmail.com
             </p>
             <p className="ba-checks">
-              <FontAwesomeIcon icon={faLocation} style={{ color: "#1E8FFD" }} />{" "}
+              <FontAwesomeIcon icon={faLocationDot} style={{ color: "#1E8FFD" }} />{" "}
               Almeida's Clinic, Baboy Commerce, next to Krishna
               Medical Stores, Malbhat, Madgaon, Goa 403601{" "}
             </p>
-            <p className="ba-checks ba-check-last">
-             
-             <span> <AiFillInstagram color="#1E8FFD" style={{fontSize:"1.7rem"}}/></span> <span>  <a href="https://www.instagram.com/mana.shakti/?igsh=MWM1azhkYm5odHhmNQ%3D%3D" target="_blank" rel="noopener noreferrer" style={{textDecoration:"none"}}>mana.shakti
-              </a></span>
+            <p className="ba-checks">
+            <FontAwesomeIcon icon={faSquareInstagram} style={{ color: "#1E8FFD" }} />{" "}
+              <a className="fontLink" href="https://www.instagram.com/mana.shakti/?igsh=MWM1azhkYm5odHhmNQ%3D%3D" target="_blank" rel="noopener noreferrer">mana.shakti
+              </a>
             </p>
           </div>
         </div>
