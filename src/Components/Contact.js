@@ -3,7 +3,7 @@ import "../Styles/Contact.css";
 import { FaInstagram, FaPhone } from "react-icons/fa";
 import "../Styles/BookAppointment.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquareInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { AiFillInstagram } from "react-icons/ai";
 import {
   faCircle,
@@ -33,7 +33,7 @@ function Contact() {
             </p>
             <p className="ba-checks">
               <FontAwesomeIcon icon={faEnvelope} style={{ color: "#1E8FFD" }} />{" "}
-              draprpitasirsikar@gmail.com
+              drarpitasirsikar@gmail.com
             </p>
             <p className="ba-checks">
               <FontAwesomeIcon icon={faLocationDot} style={{ color: "#1E8FFD" }} />{" "}
@@ -41,7 +41,7 @@ function Contact() {
               Medical Stores, Malbhat, Madgaon, Goa 403601{" "}
             </p>
             <p className="ba-checks">
-            <FontAwesomeIcon icon={faSquareInstagram} style={{ color: "#1E8FFD" }} />{" "}
+            <FontAwesomeIcon icon={faInstagram} style={{ color: "#1E8FFD" }} />{" "}
               <a className="fontLink" href="https://www.instagram.com/mana.shakti/?igsh=MWM1azhkYm5odHhmNQ%3D%3D" target="_blank" rel="noopener noreferrer">mana.shakti
               </a>
             </p>
